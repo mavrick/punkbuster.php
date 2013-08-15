@@ -1,0 +1,869 @@
+.msg {
+padding: 4px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+hr {
+display: none;
+}
+.msg_add {
+padding: 6px;
+display: inline;
+}
+.msg_title {
+display: inline;
+padding-right: 4px;
+}
+body {
+font-family: Geneva, Arial, Helvetica, sans-serif;
+font-size: 12px;
+text-decoration: none;
+}
+.red {color: #FF0000}
+.green {color: #00FF00}
+.yellow {color: #FFFF00}
+.blue {color: #0000FF}
+.lightblue {color: #00FFFF}
+.pink {color: #CC00FF}
+.grey {color: #999999}
+.white {color: #fff}
+
+
+.fb_loading {
+background-color: #000;
+background-image:url(/images/ajax_load.gif);
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+/* settings */
+#fb_settings {
+	width: 650px;
+}
+#fb_settings .fb_container .item .header {
+	height: 25px;
+	background-image: url(/images/fb_content/content_top_bar_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#fb_settings .fb_container .item .header .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+#fb_settings .fb_container .item .header .title {
+	height: 19px;
+	display: inline;
+	float: left;
+	text-align: left;
+	margin: 0 auto;
+	color: #3D3D3D;
+	font-weight: bold;
+	padding-left: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	cursor: default;
+	width: 150px;
+}
+#fb_settings .fb_container .item .header .action {
+	width: 25px;
+	height: 25px;
+	display: inline;
+	float: left;
+	background-image: url(/images/fb_content/content_hide.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer; cursor: hand;
+}
+#colorcodes .fb_container .item .header .action:hover {
+	background-image: url(/images/fb_content/content_hide_over.gif);
+}
+#fb_settings .fb_container .item .header .action.on,
+#fb_settings .fb_container .item .header .action .on {
+	background-image: url(/images/fb_content/content_hide_on.gif);
+}
+#fb_settings .fb_container .item .header .action.on:hover,
+#fb_settings .fb_container .item .header .action .on:hover {
+	background-image: url(/images/fb_content/content_hide_over_on.gif);
+}
+#fb_settings .fb_container .item .header .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+#fb_settings .fb_container .item .middle {
+	height: auto;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #BAD57E;
+	border-right-color: #BAD57E;
+	border-bottom-color: #BAD57E;
+	border-left-color: #BAD57E;
+}
+#fb_settings .fb_container .item .middle div {
+	padding: 2px;
+}
+#fb_settings .fb_container .item .bottom {
+	height: 2px;
+	background-image: url(/images/fb_content/content_bot_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#fb_settings .fb_container .item .bottom .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_left.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+#fb_settings .fb_container .item .bottom .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+
+/* messages */
+#fb_msgs {
+	width: 650px;
+}
+#fb_msgs .fb_container .item .header {
+	height: 25px;
+	background-image: url(/images/fb_content/content_top_bar_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#fb_msgs .fb_container .item .header .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+#fb_msgs .fb_container .item .header .title {
+	height: 19px;
+	display: inline;
+	float: left;
+	text-align: left;
+	margin: 0 auto;
+	color: #3D3D3D;
+	font-weight: bold;
+	padding-left: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	cursor: default;
+	width: 150px;
+}
+#fb_msgs .fb_container .item .header .action {
+	width: 25px;
+	height: 25px;
+	display: inline;
+	float: left;
+	background-image: url(/images/fb_content/content_hide.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer; cursor: hand;
+}
+#fb_msgs .fb_container .item .header .action:hover {
+	background-image: url(/images/fb_content/content_hide_over.gif);
+}
+#fb_msgs .fb_container .item .header .action.on,
+#fb_msgs .fb_container .item .header .action .on {
+	background-image: url(/images/fb_content/content_hide_on.gif);
+}
+#fb_msgs .fb_container .item .header .action.on:hover,
+#fb_msgs .fb_container .item .header .action .on:hover {
+	background-image: url(/images/fb_content/content_hide_over_on.gif);
+}
+#fb_msgs .fb_container .item .header .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+#fb_msgs .fb_container .item .middle {
+	height: auto;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #BAD57E;
+	border-right-color: #BAD57E;
+	border-bottom-color: #BAD57E;
+	border-left-color: #BAD57E;
+}
+#fb_msgs .fb_container .item .middle div {
+	padding: 2px;
+}
+#fb_msgs .fb_container .item .bottom {
+	height: 2px;
+	background-image: url(/images/fb_content/content_bot_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#fb_msgs .fb_container .item .bottom .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_left.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+#fb_msgs .fb_container .item .bottom .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+
+/* output */
+#fb_output {
+	width: 650px;
+}
+#fb_output .fb_container .item .header {
+	height: 25px;
+	background-image: url(/images/fb_content/content_top_bar_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#fb_output .fb_container .item .header .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+#fb_output .fb_container .item .header .title {
+	height: 19px;
+	display: inline;
+	float: left;
+	text-align: left;
+	margin: 0 auto;
+	color: #3D3D3D;
+	font-weight: bold;
+	padding-left: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	cursor: default;
+	width: 150px;
+}
+#fb_output .fb_container .item .header .action {
+	width: 25px;
+	height: 25px;
+	display: inline;
+	float: left;
+	background-image: url(/images/fb_content/content_hide.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer; cursor: hand;
+}
+#fb_output .fb_container .item .header .action:hover {
+	background-image: url(/images/fb_content/content_hide_over.gif);
+}
+#fb_output .fb_container .item .header .action.on,
+#fb_output .fb_container .item .header .action .on {
+	background-image: url(/images/fb_content/content_hide_on.gif);
+}
+#fb_output .fb_container .item .header .action.on:hover,
+#fb_output .fb_container .item .header .action .on:hover {
+	background-image: url(/images/fb_content/content_hide_over_on.gif);
+}
+#fb_output .fb_container .item .header .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+#fb_output .fb_container .item .middle {
+	height: auto;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #BAD57E;
+	border-right-color: #BAD57E;
+	border-bottom-color: #BAD57E;
+	border-left-color: #BAD57E;
+}
+#fb_output .fb_container .item .middle div {
+	padding: 2px;
+}
+#fb_output .fb_container .item .bottom {
+	height: 2px;
+	background-image: url(/images/fb_content/content_bot_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#fb_output .fb_container .item .bottom .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_left.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+#fb_output .fb_container .item .bottom .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+
+/* generic */
+.fb_gen {
+	width: 650px;
+}
+.fb_gen .fb_container .item .header {
+	height: 25px;
+	background-image: url(/images/fb_content/content_top_bar_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.fb_gen .fb_container .item .header .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+.fb_gen .fb_container .item .header .title {
+	height: 19px;
+	display: inline;
+	float: left;
+	text-align: left;
+	margin: 0 auto;
+	color: #3D3D3D;
+	font-weight: bold;
+	padding-left: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	cursor: default;
+	width: 450px;
+}
+.fb_gen .fb_container .item .header .action {
+	width: 25px;
+	height: 25px;
+	display: inline;
+	float: left;
+	background-image: url(/images/fb_content/content_hide.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer; cursor: hand;
+}
+.fb_gen .fb_container .item .header .action:hover {
+	background-image: url(/images/fb_content/content_hide_over.gif);
+}
+.fb_gen .fb_container .item .header .action.on,
+.fb_gen .fb_container .item .header .action .on {
+	background-image: url(/images/fb_content/content_hide_on.gif);
+}
+.fb_gen .fb_container .item .header .action.on:hover,
+.fb_gen .fb_container .item .header .action .on:hover {
+	background-image: url(/images/fb_content/content_hide_over_on.gif);
+}
+.fb_gen .fb_container .item .header .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+.fb_gen .fb_container .item .middle {
+	height: auto;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #BAD57E;
+	border-right-color: #BAD57E;
+	border-bottom-color: #BAD57E;
+	border-left-color: #BAD57E;
+}
+.fb_gen .fb_container .item .middle div {
+	padding: 2px;
+}
+.fb_gen .fb_container .item .bottom {
+	height: 2px;
+	background-image: url(/images/fb_content/content_bot_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.fb_gen .fb_container .item .bottom .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_left.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+.fb_gen .fb_container .item .bottom .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+
+/* generic overlay */
+div.overlay {
+	height: 100%;
+	width: 100%;
+	display: none;
+	z-index:999;
+	background-color:#000000;
+	background:#000000;
+	opacity: 0.7;
+	moz-opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.fb_gen_overlay {
+	width: 400px;
+	top: 50%;
+	left: 50%;
+	display: none;
+	position: absolute;
+	z-index: 1000;
+}
+.fb_gen_overlay .fb_container .item .header {
+	height: 25px;
+	background-image: url(/images/fb_content/content_top_bar_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.fb_gen_overlay .fb_container .item .header .left {
+	background: #4C4C4C;
+	background-color: #4C4C4C;
+	background-image: url(/images/fb_content/content_top_bar_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+.fb_gen_overlay .fb_container .item .header .title {
+	height: 19px;
+	display: inline;
+	float: left;
+	text-align: left;
+	margin: 0 auto;
+	color: #3D3D3D;
+	font-weight: bold;
+	padding-left: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	cursor: default;
+	width: 350px;
+}
+.fb_gen_overlay .fb_container .item .header .action {
+	width: 25px;
+	height: 25px;
+	display: inline;
+	float: left;
+	background-image: url(/images/fb_content/content_hide.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer; cursor: hand;
+}
+.fb_gen_overlay .fb_container .item .header .action:hover {
+	background-image: url(/images/fb_content/content_hide_over.gif);
+}
+.fb_gen_overlay .fb_container .item .header .action.on,
+.fb_gen_overlay .fb_container .item .header .action .on {
+	background-image: url(/images/fb_content/content_hide_on.gif);
+}
+.fb_gen_overlay .fb_container .item .header .action.on:hover,
+.fb_gen_overlay .fb_container .item .header .action .on:hover {
+	background-image: url(/images/fb_content/content_hide_over_on.gif);
+}
+.fb_gen_overlay .fb_container .item .header .right {
+	background: #4C4C4C;
+	background-color: #4C4C4C;
+	background-image: url(/images/fb_content/content_top_bar_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+.fb_gen_overlay .fb_container .item .middle {
+	height: auto;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #BAD57E;
+	border-right-color: #BAD57E;
+	border-bottom-color: #BAD57E;
+	border-left-color: #BAD57E;
+	background: #fff;
+	background-color: #fff;
+}
+.fb_gen_overlay .fb_container .item .middle div {
+	padding: 2px;
+	height: auto;
+}
+.fb_gen_overlay .fb_container .item .bottom {
+	height: 2px;
+	background-image: url(/images/fb_content/content_bot_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.fb_gen_overlay .fb_container .item .bottom .left {
+	background: #4C4C4C;
+	background-color: #4C4C4C;
+	background-image: url(/images/fb_content/content_bot_left.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+.fb_gen_overlay .fb_container .item .bottom .right {
+	background: #4C4C4C;
+	background-color: #4C4C4C;
+	background-image: url(/images/fb_content/content_bot_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+
+/* color codes */
+#colorcodes {
+	/*float: right !important;*/
+	top: 0px;
+	/*right: 0px;*/
+	margin: 10px;
+	width: 200px;
+	background: #ffffff;
+	background-color: #ffffff;
+	position: absolute;
+	display: block;
+	left: 665px;
+}
+#colorcodes .fb_container .item .header {
+	height: 25px;
+	background-image: url(/images/fb_content/content_top_bar_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#colorcodes .fb_container .item .header .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+#colorcodes .fb_container .item .header .title {
+	height: 19px;
+	display: inline;
+	float: left;
+	text-align: left;
+	margin: 0 auto;
+	color: #3D3D3D;
+	font-weight: bold;
+	padding-left: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	cursor: default;
+	width: 150px;
+}
+#colorcodes .fb_container .item .header .action {
+	width: 25px;
+	height: 25px;
+	display: inline;
+	float: left;
+	background-image: url(/images/fb_content/content_hide.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer; cursor: hand;
+}
+#colorcodes .fb_container .item .header .action:hover {
+	background-image: url(/images/fb_content/content_hide_over.gif);
+}
+#colorcodes .fb_container .item .header .action.on,
+#colorcodes .fb_container .item .header .action .on {
+	background-image: url(/images/fb_content/content_hide_on.gif);
+}
+#colorcodes .fb_container .item .header .action.on:hover,
+#colorcodes .fb_container .item .header .action .on:hover {
+	background-image: url(/images/fb_content/content_hide_over_on.gif);
+}
+#colorcodes .fb_container .item .header .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_top_bar_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 25px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+#colorcodes .fb_container .item .middle {
+	height: auto;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #BAD57E;
+	border-right-color: #BAD57E;
+	border-bottom-color: #BAD57E;
+	border-left-color: #BAD57E;
+}
+#colorcodes .fb_container .item .middle div {
+	padding: 2px;
+}
+#colorcodes .fb_container .item .bottom {
+	height: 2px;
+	background-image: url(/images/fb_content/content_bot_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#colorcodes .fb_container .item .bottom .left {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_left.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: left;
+}
+#colorcodes .fb_container .item .bottom .right {
+	background: #fff;
+	background-color: #fff;
+	background-image: url(/images/fb_content/content_bot_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 2px;
+	width: 2px;
+	display: inline;
+	float: right;
+}
+
+/* info items */
+.info {
+	font-size: 10px;
+	color: #999999;
+}
+.info strong {
+text-decoration: underline;
+}
+/* contextMenu */
+.fb_container .item .contextMenu {
+	height: 26px;
+	background-image: url(/images/fb_content/content_mid_bar_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.fb_container .item .contextMenu .left {
+	background-image:url(/images/fb_content/content_mid_bar_left.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	display:inline;
+	float:left;
+	height:26px;
+	width:2px;
+	padding-right: 4px;
+}
+.fb_container .item .contextMenu .right {
+	background-image:url(/images/fb_content/content_mid_right.gif);
+	background-position:right top;
+	background-repeat:no-repeat;
+	display:inline;
+	float:right;
+	height:26px;
+	width:2px;
+	padding-left: 4px;
+}
+.fb_container .item .contextMenu .btn {
+	display:inline;
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	color: #000;
+}
+.fb_container .item .contextMenu .menuItem {
+	background-image: url(/images/fb_content/content_mid_btn_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	float: left;
+	height:26px;
+	cursor: pointer;
+}
+.fb_container .item .contextMenu .menuItem .left {
+	background-image:url(/images/fb_content/content_mid_btn_left.gif);
+	background-position:right top;
+	background-repeat:no-repeat;
+	display:inline;
+	float:left;
+	height:26px;
+	width:2px;
+	padding: 0px;
+	margin: 0px;
+}
+.fb_container .item .contextMenu .menuItem .right {
+	background-image:url(/images/fb_content/content_mid_btn_right.gif);
+	background-position:right top;
+	background-repeat:no-repeat;
+	display:inline;
+	float:right;
+	height:26px;
+	width:2px;
+	padding: 0px;
+}
+.fb_container .item .contextMenu .menuItem.over {
+	background-image: url(/images/fb_content/content_mid_btn_bg_over.gif);
+}
+.fb_container .item .contextMenu .menuItem.over .left {
+	background-image:url(/images/fb_content/content_mid_btn_left_over.gif);
+}
+.fb_container .item .contextMenu .menuItem.over .right {
+	background-image:url(/images/fb_content/content_mid_btn_right_over.gif);
+}
+.fb_container .item .contextMenu .menuItem.over .btn {
+	color: #3d3d3d;
+}
+.fb_container .item .contextMenu .menuItem.disabled {
+	cursor: not-allowed;
+	color: #ccc;
+}
+.fb_container .item .contextMenu .divider {
+	background-image:url(/images/fb_content/content_mid_bar_div.gif);
+	background-position:center top;
+	background-repeat:no-repeat;
+	display:inline;
+	float:left;
+	height:26px;
+	width:4px;
+	padding-left:4px;
+	padding-right:4px;
+}
